@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harmony Music Player</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="Assets/pic/logo (2).jpg">
+
+</head>
+
+<body>
+  <div class="music-player">
+    <div class="player-header">
+      <i class="fas fa-music"></i>
+      <div>
+        <h1>Harmony Music Player</h1>
+        <p>Enjoy your favorite songs</p>
+      </div>
+    </div>
+
+    <!-- Audio element -->
+    <audio id="audio"></audio>
+
+    <div class="album-art">
+      <i class="fas fa-music"></i>
+    </div>
+
+    <div class="song-info">
+      <h2 id="song-title">Select a song</h2>
+      <p id="song-artist">From the playlist</p>
+    </div>
+
+    <div class="status-message" id="status-message"></div>
+
+    <div class="progress-area">
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+      <div class="timer">
+        <span id="current-time">0:00</span>
+        <span id="song-duration">0:00</span>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="prev"><i class="fas fa-step-backward"></i></button>
+      <button id="play-pause" class="play-pause"><i class="fas fa-play"></i></button>
+      <button id="next"><i class="fas fa-step-forward"></i></button>
+    </div>
+
+    <div class="volume-container">
+      <i class="fas fa-volume-up"></i>
+      <div class="volume-slider">
+        <div class="volume-percentage"></div>
+      </div>
+    </div>
+
+    <div class="additional-controls">
+      <div class="autoplay">
+        <input type="checkbox" id="autoplay" checked>
+        <label for="autoplay">Auto play</label>
+      </div>
+      <button class="repeat-btn" id="repeat" title="Repeat">
+        <i class="fas fa-redo"></i>
+      </button>
+    </div>
+
+    <div class="playlist">
+      <h3><i class="fas fa-list"></i> Playlist</h3>
+      <div id="songs-list"></div>
+    </div>
+  </div>
+
+  <script src="code.js"></script>
+</body>
+
+</html>
